@@ -12,13 +12,13 @@ Example:
 
 Given the text: "The quick brown fox and the quick blue hare." The bigrams with their counts would be.
 
-1.“the quick” 2
-2.“quick brown” 1
-3.“brown fox” 1
-4.“fox and” 1
-5.“and the” 1
-6.“quick blue” 1
-7.“blue hare” 1
+1. “the quick” 2
+2. “quick brown” 1
+3. “brown fox” 1
+4. “fox and” 1
+5. “and the” 1
+6. “quick blue” 1
+7. “blue hare” 1
 
 The solution is written in Dot Net Core, and using xUnit for some simple tests. And is delivered as a Console Application accepting one parameter of a file path to extract text from. Under the solution is a folder called "DemoText" that has 3 sample files. 
 
