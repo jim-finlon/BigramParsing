@@ -26,4 +26,4 @@ The unit tests were written in xUnit and just pass the sample text "The quick br
 
 The tests can be run from within Visual Studio or at the command prompt under the "Console.Tests" directory with the "dotnet test" command
 
-NOTE: this is demo code, in a production app I would use dependancy injection, out would pull classes and services out into their own files etc. this was built as simply as was possible while completing the excercise.
+NOTE: this is demo code, in a production app I would use dependancy injection, would pull classes and services out into their own files etc. this was built as simply as was possible while completing the excercise.
