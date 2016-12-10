@@ -24,4 +24,4 @@ If running in Visual Studio, change the Debug property of the Console applicatio
 
 The unit tests were written in xUnit and just pass the sample text "The quick brown fox and the quick blue hare." in from above, and count that there were 7 items returned, and that the first one had an "Occurence" value of "2"
 
-The tests can be run from within Visual Studio or at the command prompt under the Consol.Tests directory with the "dotnet test" command
+The tests can be run from within Visual Studio or at the command prompt under the "Console.Tests" directory with the "dotnet test" command
