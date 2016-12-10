@@ -1,8 +1,6 @@
-#Task
-
 ##Create an application that can take as input any text file and output a histogram of the bigrams in the text.
 
-##Description:
+###Description:
 
 A bigram is any two adjacent words in the text. A histogram is the count of how many times that particular bigram occurred in the text. 
 
