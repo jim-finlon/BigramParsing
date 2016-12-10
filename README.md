@@ -20,7 +20,7 @@ Given the text: "The quick brown fox and the quick blue hare." The bigrams with 
 
 The solution is written in Dot Net Core, and using xUnit for some simple tests. And is delivered as a Console Application accepting one parameter of a file path to extract text from. Under the solution is a folder called "DemoText" that has 3 sample files. 
 
-If running in Visual Studio, change the Debug property of the Console application to set the correct path to the test file you would like to use. If a text file is not provided as a parameter to the console application, it will use default text of the first paragraph of Get Gettysburg Address.
+If running in Visual Studio, change the Debug property of the Console application to set the correct path to the test file you would like to use. If a text file is not provided as a parameter to the console application, it will use default text of the first paragraph of the Gettysburg Address.
 
 The unit tests were written in xUnit and just pass the sample text "The quick brown fox and the quick blue hare." in from above, and count that there were 7 items returned, and that the first one had an "Occurence" value of "2"
 
