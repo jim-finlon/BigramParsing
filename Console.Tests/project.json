@@ -1,0 +1,27 @@
+{
+  "buildOptions": {
+    "debugType": "portable"
+  },
+  "dependencies": {
+    "xunit": "2.1.0",
+    "dotnet-test-xunit": "1.0.0-rc2-build10025",
+    "System.Runtime.Serialization.Primitives": "4.3.0",
+    "Microsoft.NETCore.App": "1.1.0",
+    "Console": "1.0.0-*"
+  },
+  "frameworks": {
+    "netcoreapp1.0": {
+      "dependencies": {
+      },
+      "imports": [
+        "dotnet5.4",
+        "portable-net451+win8"
+      ]
+    }
+  },
+  "runtimes": {
+    "win10-x64": {}
+  },
+  "testRunner": "xunit",
+  "version": "1.0.0-*"
+}
