@@ -11,10 +11,10 @@ namespace Tests
         {
             var sut = new HistogramService();
             var text = "The quick brown fox and the quick blue hare.";
+            
             var results = sut.BuildModel(text);
 
-            var count = results.Count;
-            Assert.Equal(7, count);
+            Assert.Equal(7, results.Count);
           
         }
 
@@ -23,6 +23,7 @@ namespace Tests
         {
             var sut = new HistogramService();
             var text = "The quick brown fox and the quick blue hare.";
+            
             var results = sut.BuildModel(text).First();
 
             Assert.Equal(2, results.Occurences);
