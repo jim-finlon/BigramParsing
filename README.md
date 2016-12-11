@@ -22,7 +22,7 @@ The solution is written in C# using Dot Net Core, and using xUnit for some simpl
 
 If running in Visual Studio, change the Debug property of the Console application to set the correct path to the test file you would like to use. If a text file is not provided as a parameter to the console application, it will use default text of the first paragraph of the Gettysburg Address.
 
-The unit tests were written in xUnit and just pass the sample text "The quick brown fox and the quick blue hare." in from above, and count that there were 7 items returned, and that the first one had an "Occurence" value of "2"
+The unit tests were written in xUnit and just passes the sample text "The quick brown fox and the quick blue hare." in from above, and count that there were 7 items returned, and that the first one had an "Occurence" value of "2"
 
 The tests can be run from within Visual Studio or at the command prompt under the "Console.Tests" directory with the "dotnet test" command
 
