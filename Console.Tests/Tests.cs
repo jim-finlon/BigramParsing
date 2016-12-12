@@ -1,4 +1,4 @@
-﻿using System.Linq;
+using System.Linq;
 using ConsoleApplication;
 using Xunit;
 
@@ -10,9 +10,9 @@ namespace Tests
         public void LengthOfResultsTest()
         {
             var sut = new HistogramService();
-            var text = "The quick brown fox and the quick blue hare.";
-            
-            var results = sut.BuildModel(text);
+            var testFile = "./Sample.txt";
+
+            var results = sut.ProcessFile(testFile);
 
             Assert.Equal(7, results.Count);
           
@@ -22,11 +22,11 @@ namespace Tests
         public void ValueOfResultsTest()
         {
             var sut = new HistogramService();
-            var text = "The quick brown fox and the quick blue hare.";
+            var testFile = "./Sample.txt";
             
-            var results = sut.BuildModel(text).First();
+            var results = sut.ProcessFile(testFile).First();
 
-            Assert.Equal(2, results.Occurences);
+            Assert.Equal(2, results.Value);
 
         }
     }
