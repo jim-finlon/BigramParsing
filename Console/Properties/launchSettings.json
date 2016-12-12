@@ -2,7 +2,7 @@
   "profiles": {
     "Console": {
       "commandName": "Project",
-      "commandLineArgs": "\"D:\\Dev\\Coding Excercise\\DemoText\\Sample.txt\""
+      "commandLineArgs": "../DemoText/Repeat.txt"
     }
   }
 }

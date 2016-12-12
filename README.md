@@ -19,10 +19,14 @@ Given the text: "The quick brown fox and the quick blue hare." The bigrams with 
 7. “blue hare” 1
 
 ####Solution
-The solution is written in C# using Dot Net Core v1.1.0, with the "win10-x64" runtime set as default (use "win10-x86" or "win10-arm", and recompile if needed ). It uses xUnit for some simple tests. It is delivered as a Console Application accepting one parameter of a file path to extract text from. If the path has a space in it, surround the entire string with quotes. Under the solution is a folder called "DemoText" that has 3 sample files. 
+The solution is written in C# using Dot Net Core v1.1.0, with the "win10-x64" runtime set as default (use "win10-x86" or "win10-arm", and recompile if needed ). It uses xUnit for some simple tests. 
+
+It is delivered as a Console Application accepting one parameter of a file path to extract text from.
+If the path has a space in it, surround the entire string with quotes. Under the solution is a folder called "DemoText" that has 3 sample files. 
 
 ####Instructions
-If running in Visual Studio, change the parameter property in the Debug tab under properties of the Console application to set the correct path to the test file you would like to use. If a text file is not provided as a parameter to the console application, it will use default text of the first paragraph of the Gettysburg Address.
+If running in Visual Studio, change the parameter property in the Debug tab under properties of the Console application to set the correct path to the test file you would like to use. 
+If a text file is not provided as a parameter to the console application, it will use default text of "The quick brown fox and the quick blue hare.".
 
 The unit tests were written in xUnit and pass the sample text "The quick brown fox and the quick blue hare." into the service call. One test checks that there were 7 items returned, and the second test that the first item returned had an "Occurence" value of "2"
 

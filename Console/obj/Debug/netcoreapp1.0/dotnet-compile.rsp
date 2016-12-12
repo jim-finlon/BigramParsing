@@ -1,5 +1,5 @@
---temp-output:D:\Dev\Coding Excercise\Console\obj\Debug\netcoreapp1.0\
---out:D:\Dev\Coding Excercise\Console\bin\Debug\netcoreapp1.0\Console.dll
+--temp-output:D:\Dev\Insys\BigramParsing\Console\obj\Debug\netcoreapp1.0\
+--out:D:\Dev\Insys\BigramParsing\Console\bin\Debug\netcoreapp1.0\Console.dll
 --define:DEBUG
 --define:TRACE
 --define:NETCOREAPP1_0
@@ -87,4 +87,4 @@
 --reference:C:\Users\emera\.nuget\packages\System.Threading.Timer\4.0.1\ref\netstandard1.2\System.Threading.Timer.dll
 --reference:C:\Users\emera\.nuget\packages\System.Xml.ReaderWriter\4.0.11\ref\netstandard1.3\System.Xml.ReaderWriter.dll
 --reference:C:\Users\emera\.nuget\packages\System.Xml.XDocument\4.0.11\ref\netstandard1.3\System.Xml.XDocument.dll
-D:\Dev\Coding Excercise\Console\Program.cs
+D:\Dev\Insys\BigramParsing\Console\Program.cs
