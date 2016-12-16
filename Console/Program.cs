@@ -60,6 +60,7 @@ namespace ConsoleApplication
             var dic = new Dictionary<string, int>();
 
             if (!File.Exists(path)) return dic;
+
             using (var fs = File.Open(path, FileMode.Open, FileAccess.Read, FileShare.ReadWrite))
             using (var bs = new BufferedStream(fs))
             using (var sr = new StreamReader(bs))
@@ -84,7 +85,6 @@ namespace ConsoleApplication
                         {
                             dic.Add(phrase, 1);
                         }
-
                     }
                 }
             }
