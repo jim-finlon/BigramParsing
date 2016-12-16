@@ -53,60 +53,45 @@ namespace ConsoleApplication
         }
     }
 
-
     public class HistogramService
     {
         public Dictionary<string, int> ProcessFile(string path)
         {
             var dic = new Dictionary<string, int>();
 
-
-            if (File.Exists(path))
+            if (!File.Exists(path)) return dic;
+            using (var fs = File.Open(path, FileMode.Open, FileAccess.Read, FileShare.ReadWrite))
+            using (var bs = new BufferedStream(fs))
+            using (var sr = new StreamReader(bs))
             {
-
-                try
+                string line;
+                while ((line = sr.ReadLine()) != null)
                 {
-                    using (var fs = File.Open(path, FileMode.Open, FileAccess.Read, FileShare.ReadWrite))
-                    using (var bs = new BufferedStream(fs))
-                    using (var sr = new StreamReader(bs))
+                    var source = RemovePunctuation(line);
+                    var words = source.ToLower().Split(' ');
+
+                    for (var i = 0; i < words.Length - 1; i++)
                     {
-                        string line;
-                        while ((line = sr.ReadLine()) != null)
+                        var phrase = $"{words[i]} {words[i + 1]}";
+
+                        var ext = dic.FirstOrDefault(r => r.Key == phrase);
+
+                        if (ext.Value > 0)
                         {
-                            var source = RemovePunctuation(line);
-                            var words = source.ToLower().Split(' ');
-
-                            for (var i = 0; i < words.Length - 1; i++)
-                            {
-                                var phrase = $"{words[i]} {words[i + 1]}";
-
-                                var ext = dic.FirstOrDefault(r => r.Key == phrase);
-
-                                if (ext.Value > 0)
-                                {
-                                    dic[phrase] = ext.Value + 1;
-                                }
-                                else
-                                {
-                                    dic.Add(phrase, 1);
-                                }
-
-                            }
+                            dic[phrase] = ext.Value + 1;
                         }
+                        else
+                        {
+                            dic.Add(phrase, 1);
+                        }
+
                     }
                 }
-                catch (Exception)
-                {
-                    throw;
-                }
-
-
             }
 
             return dic;
         }
-
-
+        
         private static string RemovePunctuation(string input)
         {
             return input.Replace(".", "").Replace("!", "").Replace("?", "").Replace("\"", "").Replace(",", "").Replace("#", "").Replace(":", "").Replace(";", "");

@@ -35,4 +35,4 @@ The unit tests were written in xUnit and pass a path to a file that contains the
 The tests can be run from within Visual Studio or at the command prompt under the "Console.Tests" directory with the "dotnet test" command
 
 ####Note
-This is demo code, in a production app I would use dependancy injection, would pull classes and services out into their own files etc. The project structure was generated with the .Net core cli.
+This is demo code, in a production app I would use dependancy injection, would pull classes and services out into their own files etc. The project structure was generated with the .Net core cli. Using "dotnet new", "dotnet new -t xunittest" after creating empty folders. After generating the projects, I opened VS and created an empty solution and added both of these projects to the solution
